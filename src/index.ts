@@ -8,7 +8,14 @@ import "font-awesome/css/font-awesome.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./styles/screen.scss";
 
+/**
+ * Register 3 modules in modules/
+ */
 angular.module("app", ["app.application", "app.tweets", "app.about"]);
+
+/**
+ * Run boot in document 
+ */
 angular.bootstrap(document, ["app"], {
     strictDi: true
 });

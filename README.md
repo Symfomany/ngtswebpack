@@ -8,6 +8,13 @@ App basé sur les Tweets
 
 Avant => Après ^^
 
+
+L'architecture de mon App: TypeScript + Angular 1.5.6 Components
+
+![enter image description here](./images/preview.png)
+![enter image description here](./images/preview2.png)
+
+
 ![enter image description here](http://yanivefraim.github.io/assets/article_images/2015-05-21-be-ready-for-angular2-today/app_structure.png)
 
 Oups... Google fait confiance à Microsoft sur l'avenir de ES

@@ -1,29 +1,32 @@
 var loaders = require("./loaders");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
+var BellOnBundlerErrorPlugin = require('bell-on-bundler-error-plugin')
 
+
+/**
+ * Build a Bundle in js...
+ */
 module.exports = {
-    entry: ['./src/index.ts'],
-    output: {
+    entry: ['./src/index.ts'], //entry point
+    output: { // directory output
         filename: 'build.js',
         path: 'dist'
     },
-    devtool: 'source-map',
+    devtool: 'source-map', // with SourceMap in file
     resolve: {
         root: __dirname,
-        extensions: ['', '.ts', '.js', '.json']
+        extensions: ['', '.ts', '.js', '.json'] // all extensions
     },
     resolveLoader: {
         modulesDirectories: ["node_modules"]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(
-            {
-                warning: false,
-                mangle: true,
-                comments: false
-            }
-        ),
+        new webpack.optimize.UglifyJsPlugin({
+            warning: false,
+            mangle: true,
+            comments: false
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
             inject: 'body',
@@ -34,9 +37,11 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             'window.jquery': 'jquery'
-        })
+        }),
+        new BellOnBundlerErrorPlugin()
+
     ],
-    module:{
+    module: {
         loaders: loaders
     }
 };

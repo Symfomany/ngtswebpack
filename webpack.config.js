@@ -1,25 +1,9 @@
 var babel = require('babel-core');
 var webpack = require('webpack');
 
-var webpackPostprocessor = wallabyWebpack({
-    module: {
-        loaders: [{
-                test: /\.html$/,
-                exclude: /node_modules/,
-                loader: 'raw'
-            },
-            {
-                test: /\.css$/,
-                loader: 'style-loader!css-loader'
-            },
-            {
-                test: /\.scss$/,
-                loader: 'style!css!sass'
-            }
-        ]
-    }
-});
-
+/**
+ * All Webpack
+ */
 module.exports = function() {
     return {
         files: [
@@ -29,16 +13,24 @@ module.exports = function() {
             { pattern: 'src/**/*.ts', load: false },
             { pattern: 'node_modules/**/*.js', ignore: true }
         ],
-
-        tests: [
-            { pattern: 'src/**/*.spec.ts', load: false },
-            { pattern: 'node_modules/**/*.js', ignore: true }
-        ],
-
         preprocessors: {
             '**/*.js': file => babel.transform(file.content, { sourceMap: true })
         },
-        postprocessor: webpackPostprocessor
-
+        module: {
+            loaders: [{
+                    test: /\.html$/,
+                    exclude: /node_modules/,
+                    loader: 'raw'
+                },
+                {
+                    test: /\.css$/,
+                    loader: 'style-loader!css-loader'
+                },
+                {
+                    test: /\.scss$/,
+                    loader: 'style!css!sass'
+                }
+            ]
+        }
     };
 };

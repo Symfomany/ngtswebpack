@@ -1,41 +1,41 @@
 {
-    "name": "ngtswp",
-    "version": "1.0",
-    "description": "Petite projet pour AngularJS & TypeScript & Webpack",
-    "main": "/",
-    "scripts": {
-        "start": "webpack --config webpack/webpack.dev.js --watch --NODE_ENV=dev",
-        "build": "webpack --config webpack/webpack.build.js --NODE_ENV=production",
-        "postinstall": "typings install"
-    },
-    "author": "Boyer Julien <zuzu38080@gmail.com>",
-    "license": "MIT",
-    "dependencies": {
-        "angular": "1.5.5",
-        "angular-route": "1.5.5",
-        "bootstrap": "3.3.6",
-        "font-awesome": "4.6.1",
-        "jquery": "2.2.4",
-        "lodash": "4.12.0"
-    },
-    "devDependencies": {
-        "angular-mocks": "1.5.5",
-        "babel-core": "6.9.0",
-        "babel-istanbul": "0.8.0",
-        "browser-sync": "2.12.8",
-        "browser-sync-webpack-plugin": "1.0.1",
-        "compression-webpack-plugin": "0.3.1",
-        "css-loader": "0.23.1",
-        "file-loader": "0.8.5",
-        "html-webpack-plugin": "2.17.0",
-        "node-sass": "3.7.0",
-        "raw-loader": "0.5.1",
-        "sass-loader": "3.2.0",
-        "style-loader": "0.13.1",
-        "ts-loader": "0.8.2",
-        "typescript": "1.8.10",
-        "typings": "1.0.4",
-        "url-loader": "0.5.7",
-        "webpack": "1.13.1"
-    }
+  "name": "ngtswp",
+  "description": "Petite projet pour AngularJS & TypeScript & Webpack",
+  "main": "/",
+  "scripts": {
+    "start": "npm run build && webpack --config webpack/webpack.dev.js --watch --NODE_ENV=dev",
+    "build": "webpack --config webpack/webpack.build.js --NODE_ENV=production",
+    "postinstall": "typings install"
+  },
+  "author": "Boyer Julien <zuzu38080@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.5.5",
+    "angular-route": "1.5.5",
+    "bell-on-bundler-error-plugin": "~1.0.8",
+    "bootstrap": "3.3.6",
+    "font-awesome": "4.6.1",
+    "jquery": "2.2.4",
+    "lodash": "4.12.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.5",
+    "babel-core": "6.9.0",
+    "babel-istanbul": "0.8.0",
+    "browser-sync": "2.12.8",
+    "browser-sync-webpack-plugin": "1.0.1",
+    "compression-webpack-plugin": "0.3.1",
+    "css-loader": "0.23.1",
+    "file-loader": "0.8.5",
+    "html-webpack-plugin": "2.17.0",
+    "node-sass": "3.7.0",
+    "raw-loader": "0.5.1",
+    "sass-loader": "3.2.0",
+    "style-loader": "0.13.1",
+    "ts-loader": "0.8.2",
+    "typescript": "1.8.10",
+    "typings": "1.0.4",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.1"
+  }
 }

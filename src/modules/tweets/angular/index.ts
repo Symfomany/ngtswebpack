@@ -1,17 +1,21 @@
 import "angular";
 import "angular-route";
-import {config as routesConfig} from "./configs/routes";
-import {PageTweetsComponent} from "./components/pageTweets/PageTweetsComponent";
-import {TweetContentComponent} from "./components/tweetContent/TweetContentComponent";
-import {TweetMainComponent} from "./components/tweetMain/TweetMainComponent";
-import {TweetSidebarComponent} from "./components/tweetSidebar/TweetSidebarComponent";
-import {TweetTopbarComponent} from "./components/tweetTopbar/TweetTopbarComponent";
-import {ContentModel} from "../core/models/impl/ContentModel";
-import {SharedModel} from "../core/models/impl/SharedModel";
-import {SidebarModel} from "../core/models/impl/SidebarModel";
-import {TopbarModel} from "../core/models/impl/TopbarModel";
-import {TweetService} from "../core/services/impl/TweetService";
+import { config as routesConfig } from "./configs/routes";
+import { PageTweetsComponent } from "./components/pageTweets/PageTweetsComponent";
+import { TweetContentComponent } from "./components/tweetContent/TweetContentComponent";
+import { TweetMainComponent } from "./components/tweetMain/TweetMainComponent";
+import { TweetSidebarComponent } from "./components/tweetSidebar/TweetSidebarComponent";
+import { TweetTopbarComponent } from "./components/tweetTopbar/TweetTopbarComponent";
+import { ContentModel } from "../core/models/ContentModel";
+import { SharedModel } from "../core/models/SharedModel";
+import { SidebarModel } from "../core/models/SidebarModel";
+import { TopbarModel } from "../core/models/TopbarModel";
+import { TweetService } from "../core/services/TweetService";
 
+
+/**
+ * All register behin app.tweets module: Config, Services, Components....
+ */
 angular.module("app.tweets", ["ngRoute"])
     .service("ContentModel", ContentModel)
     .service("SharedModel", SharedModel)

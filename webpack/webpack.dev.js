@@ -2,6 +2,9 @@ var loaders = require("./loaders");
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
+var BellOnBundlerErrorPlugin = require('bell-on-bundler-error-plugin')
+
+
 module.exports = {
     entry: ['./src/index.ts'],
     output: {
@@ -37,9 +40,10 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             'window.jquery': 'jquery'
-        })
+        }),
+        new BellOnBundlerErrorPlugin()
     ],
-    module:{
+    module: {
         loaders: loaders
     }
 };

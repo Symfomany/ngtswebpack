@@ -1,3 +1,11 @@
+
+/**
+ * Star Component
+ * 
+ * @export
+ * @class StarComponent
+ * @implements {ng.IComponentOptions}
+ */
 export class StarComponent implements ng.IComponentOptions {
     public bindings: any = {
         starred: "="
@@ -8,6 +16,12 @@ export class StarComponent implements ng.IComponentOptions {
             ng-class="{'starred': $ctrl.starred}"
             ng-click="$ctrl.toggle()"></i>`;
 }
+
+/**
+ * Star Controller
+ * @export
+ * @class StarController
+ */
 export class StarController {
     public starred: boolean;
 
