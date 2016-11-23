@@ -1,0 +1,12 @@
+{
+    "tsdoc": {
+        "source": "/home/boyer/Bureau/angular-typescript-webpack/src/",
+        "destination": "/home/boyer/Bureau/angular-typescript-webpack/docs",
+        "tutorials": "",
+        "systemName": "angular-typescript-webpack",
+        "footer": "",
+        "copyright": "angular-typescript-webpack Copyright © 2016 Boyer Julien",
+        "outputSourceFiles": true,
+        "commentsOnly": true
+    }
+}
