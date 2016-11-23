@@ -14,6 +14,11 @@ Oups... Google fait confiance à Microsoft sur l'avenir de ES
 
 ![enter image description here](http://selleo.com/wp-content/uploads/2015/10/migrating-to-angular2-typescript.png)
 
+
+Gestionnaire de dépendances pour Typescript: Typings
+
+![enter image description here](https://camo.githubusercontent.com/ab6230980c6f9ac22dbdf32891b1215e6b0cc49b/68747470733a2f2f63646e2e7261776769742e636f6d2f747970696e67732f747970696e67732f6d61737465722f6c6f676f2e737667)
+
 Cela donne une Architecture de Composants Nested
 
 ![enter image description here](http://40.media.tumblr.com/8d2360fe8f3f0c66b20cb5dcc45856ce/tumblr_nnzn556v7F1qc0howo3_1280.png) 
