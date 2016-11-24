@@ -1,0 +1,11 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+
+
+div.container-fluid{
+    ul{
+        li{
+            color: $color;
+        }
+    }
+}

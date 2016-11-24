@@ -4,8 +4,6 @@ Angular + Typescript + Webpack + Sourcemaps suporter :)
 
 App basé sur les Tweets
 
-
-
 Avant => Après ^^
 
 

@@ -1,3 +1,10 @@
+/**
+ * Page Component
+ * 
+ * @export
+ * @class PageAboutComponent
+ * @implements {ng.IComponentOptions}
+ */
 export class PageAboutComponent implements ng.IComponentOptions {
     public template: string = `
     <div class="container-fluid">
