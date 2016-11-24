@@ -27,12 +27,12 @@ module.exports = {
             mangle: true,
             comments: false
         }),
-        new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({ //source HTML
             template: './src/index.html',
             inject: 'body',
             hash: true
         }),
-        new webpack.ProvidePlugin({
+        new webpack.ProvidePlugin({ //include library jquery
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery',

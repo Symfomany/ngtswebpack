@@ -1,6 +1,7 @@
 import "./modules/application/angular/index";
 import "./modules/tweets/angular/index";
 import "./modules/about/angular/index";
+import "./modules/tchat/angular/index";
 
 
 import "angular";
@@ -14,13 +15,14 @@ import "./styles/main.scss";
 
 
 /**
- * Index General: Import each index of Component: Application, Tweets & About
+ * Index General: Import each index of Component: Application, Tweets, Tchat & About
  */
 
 /**
- * Register 3 modules in modules/
+ * Register 4 modules in modules/
  */
-angular.module("app", ["app.application", "app.tweets", "app.about"]);
+angular.module("app", ["app.application", "app.tweets", "app.about", "app.tchat"]);
+
 
 /**
  * Run boot in document 

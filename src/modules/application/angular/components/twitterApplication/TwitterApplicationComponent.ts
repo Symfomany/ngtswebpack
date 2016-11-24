@@ -7,6 +7,12 @@
  * @implements {ng.IComponentOptions}
  */
 export class TwitterApplicationComponent implements ng.IComponentOptions {
+
+    /**
+     * All Menu Links
+     * @type {string}
+     * @memberOf TwitterApplicationComponent
+     */
     public template: string = `
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -23,6 +29,7 @@ export class TwitterApplicationComponent implements ng.IComponentOptions {
                     <ul class="nav navbar-nav">
                         <li><a href="#/" title="Tweets">Les Tweets</a></li>
                         <li><a href="#/about" title="About">A propos</a></li>
+                        <li><a href="#/tchat" title="tchat">Tchat</a></li>
                     </ul>
                 </div>
             </div>
